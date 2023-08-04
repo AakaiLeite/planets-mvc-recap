@@ -24,10 +24,6 @@ const planetSchema = new Schema({
         type: String,
         required: true,
     },
-    wifi: {
-        type: String,
-        enum: ['yes', 'no']
-    }
 }); 
 
 const Planet = mongoose.model('Planet', planetSchema);

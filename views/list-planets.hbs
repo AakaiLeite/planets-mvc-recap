@@ -9,9 +9,9 @@
     <div class="div-background-list-planets">
       {{#each planets}}
         <div class="div-planet-single-list">
-          {{name}}
-          <h1 class="planet-heading">{{velocity}}, {{distance}}</h1>
+          <h1 class="planet-heading">{{name}}</h1>
           <img class="planet-img" src="{{image}}" />
+          <p><span>Velocity: {{velocity}}</span>, <span>Distance: {{distance}}</span></p>
           <p class="planet-description">{{description}}</p>
         </div>
       {{/each}}
