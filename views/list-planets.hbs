@@ -1,19 +1,20 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planets List</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
     <div class="div-background-list-planets">
-    <!-- Your Code Goes Here ...  -->
+      {{#each planets}}
         <div class="div-planet-single-list">
-            <h1 class="planet-heading"><!-- Your Code Goes Here ... --></h1>
-            <img class="planet-img" src="<!-- Your Code Goes Here ... -->"/>
-            <p class="planet-description"><!-- Your Code Goes Here ... --></p>
+          {{name}}
+          <h1 class="planet-heading">{{velocity}}, {{distance}}</h1>
+          <img class="planet-img" src="{{image}}" />
+          <p class="planet-description">{{description}}</p>
         </div>
+      {{/each}}
     </div>
-</body>
+  </body>
 </html>
